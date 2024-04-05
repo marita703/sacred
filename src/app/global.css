@@ -49,23 +49,6 @@
   }
 }
 
-@layer utilities {
-  /* Define your custom utility classes here */
-  .border-border {
-    border-width: 0px;
-    /* Add any other styles you want for the border-border class */
-  }
-  .bg-background {
-    background-color: var(--background);
-    /* Add any other styles you want for the bg-background class */
-  }
-
-  .text-foreground {
-    color: var(--foreground);
-    /* Add any other styles you want for the text-foreground class */
-  }
-}
-
 @layer base {
   * {
     @apply border-border;
@@ -73,4 +56,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.swiper-pagination-bullet {
+  width: 7px !important;
+  height: 7px !important;
+  background: rgba(255, 255, 255, 0.2);
+  scale: 0.9 !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: white !important;
+  scale: 1 !important ;
 }
